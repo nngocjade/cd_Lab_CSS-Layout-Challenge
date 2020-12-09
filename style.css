@@ -246,3 +246,36 @@ section {
   background-color: lightgray;
   margin: 0.8rem;
 }
+
+/* CHALLENGE 12 */
+.c12-box-container.box1 {
+  width: 15em;
+  height: 30em;
+  background-color: gray;
+  color: white;
+  position: relative;
+}
+
+/* .c12-box-container > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+} */
+
+.c12-box-container.box1 > .box.two {
+  height: 50%;
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  right: -40%;
+}
+.c12-box-container.box1 > .box.two:after {
+  content: "box3";
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  bottom: -30%;
+  left: -30%;
+  background-color: lightgray;
+}
