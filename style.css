@@ -1,0 +1,43 @@
+section {
+  width: 30em;
+  height: 30em;
+  background-color: linen;
+}
+
+.box {
+  width: 10em;
+  height: 10em;
+  color: white;
+  position: relative;
+  background-color: black;
+}
+
+/* CHALLENGE 1 */
+#challenge1 {
+  width: 100%;
+}
+.box-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#challenge1 .box.two {
+  align-self: flex-end;
+}
+
+/* CHALLENGE 4 */
+
+.box.four:after {
+  content: " ";
+  width: 10em;
+  height: 10em;
+  background-color: gray;
+  position: absolute;
+}
+
+.box.four:after {
+  content: "div2";
+  top: 50%;
+  left: 50%;
+}
