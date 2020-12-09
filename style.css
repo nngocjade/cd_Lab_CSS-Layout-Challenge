@@ -313,3 +313,67 @@ section {
   right: 0;
   bottom: 0;
 }
+
+/* CHALLENGE 14 */
+#challenge14 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c14-box-container > .box.one {
+  width: 20em;
+  height: 20em;
+  background-color: gray;
+  color: white;
+  position: relative;
+}
+.c14-box-container > .box.one::after {
+  content: "box2";
+  width: 50%;
+  height: 50%;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* CHALLENGE 15 */
+
+.c15-box-container {
+  width: 30em;
+  height: 30em;
+  position: relative;
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.c15-box-container > .box.one {
+  width: 48%;
+  height: 55%;
+  background-color: gray;
+  position: relative;
+}
+.c15-box-container > .box.one:after {
+  content: "box4";
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  bottom: -82%;
+  right: -108.5%;
+}
+.c15-box-container > .box.two {
+  position: relative;
+}
+
+.c15-box-container > .box.two:after {
+  content: "box3";
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  position: absolute;
+  bottom: -82%;
+  right: -108.5%;
+}
