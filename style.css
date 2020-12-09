@@ -212,3 +212,37 @@ section {
   left: 0;
   margin: 0;
 }
+
+/* CHALLENGE 11 */
+.c11-box-container.box1 {
+  width: 15em;
+  height: 30em;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.c11-box-container > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.c11-box-container.box1 > .box.two {
+  align-self: flex-end;
+  height: 50%;
+  width: 80%;
+}
+.c11-box-container.box1 > .box.two:after {
+  content: "box3";
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: lightgray;
+  margin: 0.8rem;
+}
