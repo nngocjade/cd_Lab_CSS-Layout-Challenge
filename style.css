@@ -256,13 +256,6 @@ section {
   position: relative;
 }
 
-/* .c12-box-container > p {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-} */
-
 .c12-box-container.box1 > .box.two {
   height: 50%;
   width: 80%;
@@ -278,4 +271,45 @@ section {
   bottom: -30%;
   left: -30%;
   background-color: lightgray;
+}
+
+/* CHALLENGE 13 */
+
+.c13-box-container {
+  width: 30em;
+  height: 30em;
+  position: relative;
+}
+
+.c13-box-container > .box.one {
+  position: relative;
+}
+.c13-box-container > .box.one:after {
+  content: "box2";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  background-color: gray;
+}
+
+.c13-box-container > .box.three {
+  margin: 0 auto;
+  position: relative;
+}
+.c13-box-container > .box.three:after {
+  content: "box4";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  bottom: -50%;
+  right: -50%;
+  background-color: gray;
+}
+
+.c13-box-container > .box.five {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
