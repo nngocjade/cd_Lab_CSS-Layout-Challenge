@@ -116,9 +116,7 @@ section {
   width: 30em;
   height: 15em;
   display: flex;
-  text-align: left;
   justify-content: space-between;
-  text-align: left;
   position: relative;
 }
 
@@ -136,7 +134,7 @@ section {
   align-content: flex-start;
 }
 
-/* CHALLENGE 6 */
+/* CHALLENGE 7 */
 
 .c7-box-container > .box.one {
   width: 25em;
@@ -151,4 +149,42 @@ section {
   background-color: gray;
   bottom: 0;
   right: 0;
+}
+
+/* CHALLENGE 8 */
+
+.c8-box-container > .box.one {
+  width: 25em;
+  height: 25em;
+  position: relative;
+}
+.c8-box-container > .box.one:after {
+  content: "box2";
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  background-color: gray;
+  top: 0;
+  right: 0;
+}
+
+/* CHALLENGE 9 */
+
+.c9-box-container.box1 {
+  background-color: gray;
+  color: white;
+  width: 15em;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.c9-box-container > p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
 }
